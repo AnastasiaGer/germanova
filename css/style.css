@@ -704,9 +704,9 @@ h2.menu-item:after {
   opacity: 0.3
 }
 
-#close i {
+#close svg {
   font-size: 30px;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .inline-menu {
