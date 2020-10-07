@@ -221,7 +221,8 @@ img {
 }
 
 svg:not(:root) {
-  overflow:hidden
+  overflow:hidden;
+  vertical-align: sub;
 }
 
 [role=button], a, area, button, input, label, select, summary, textarea {
