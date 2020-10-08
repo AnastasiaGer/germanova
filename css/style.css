@@ -2173,7 +2173,7 @@ h4.package {
   .inline-menu-container,
   .close-pop {
     right: 0;
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -2298,7 +2298,7 @@ h4.package {
   .inline-menu-container {
     font-size: 14px;
     right: 10px;
-    width: 69%;
+    width: 100%;
   }
 
   .inline-menu li {
