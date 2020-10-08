@@ -160,6 +160,13 @@
         $('.inline-menu-container').addClass('showx');
         $('.content-blocks.pop section').empty();
     });
+//On Click Close Project And Project Details
+    $('#close-project').on('click', function () {
+        $('.content-blocks.pop').removeClass('showx');
+        $('.sidebar-menu').removeClass('hidex');
+        $('.inline-menu-container').addClass('showx');
+        $('.content-blocks.pop section').empty();
+    });
 
     $('.menu-block, .menu-item, #close').on('click', function () {
         $('.content-blocks').animate({
@@ -225,28 +232,5 @@
             $('.cursor').css('transform', 'scale(1)');
         });
     }
-
-    //Leaflet Map
-
-    var mymap = L.map('map').setView([40.6700, -73.9400], 14);
-
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-        maxZoom: 18,
-        attribution: '',
-        id: 'mapbox/streets-v11',
-        tileSize: 512,
-        zoomOffset: -1
-    }).addTo(mymap);
-
-    var icon = L.divIcon({
-        className: 'custom-div-icon',
-        html: "<div class='map-marker'></div>",
-        iconSize: [30, 30],
-        iconAnchor: [15, 15]
-    });
-
-    L.marker([40.6700, -73.9400], {
-        icon: icon
-    }).addTo(mymap);
 
 })(jQuery);

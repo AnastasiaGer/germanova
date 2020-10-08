@@ -706,7 +706,7 @@ h2.menu-item:after {
 
 #close svg {
   font-size: 30px;
-  vertical-align: middle;
+  vertical-align: sub;
 }
 
 .inline-menu {
