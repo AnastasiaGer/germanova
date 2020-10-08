@@ -1,13 +1,3 @@
-/*------------------------------------------------------------------
-
-    [Master Stylesheet]
-
-    Theme Name: Alpha | Personal vCard Template
-    Version: 1.0
-    Last change: 17/08/2017
-    Developer: LionCoders - http://www.lion-coders.com
-
--------------------------------------------------------------------*/
 
 
 /*------------------------------------------------------------------
@@ -20,9 +10,9 @@
     3. Menu Styles
     4. Page Content
     5. Name Block
-    6. About Block
+    6. Resume Block
     7. Portfolio Block
-    8. Blog Block
+    8. About Block
     9. Contact Block
    10. Responsive
 
@@ -483,87 +473,6 @@ a:not([href]):not([tabindex]) {
   height: 100%;
   position: fixed;
   width: 100%;
-}
-
-/* HERO SLIDER*/
-
-#lionhero {
-  z-index: 0;
-}
-
-#lionhero .item {
-  height: 100vh;
-}
-
-#lionhero .item img {
-  background-size: cover;
-}
-
-#lionhero .item .slide {
-  height: 100vh;
-}
-
-.slide.one {
-  background: url(../images/slider/slide1.jpg) 48% 48%;
-  background-size: cover;
-}
-
-.slide.two {
-  background: url(../images/slider/slide2.jpg) 48% 48%;
-  background-size: cover;
-}
-
-.slide.three {
-  background: url(../images/slider/slide3.jpg) 48% 48%;
-  background-size: cover;
-}
-
-#lionhero .owl-nav {
-  color: #FFF;
-  cursor: pointer;
-  font-size: 30px;
-  padding: 10px;
-  left: 42%;
-  position: absolute;
-  bottom: 10px;
-  z-index: 999999999;
-}
-
-#lionhero .owl-prev {
-  float: left;
-  margin: 10px
-}
-
-#lionhero .owl-next {
-  float: right;
-  margin: 10px
-}
-
-#liontextslider {
-  width: 400px;
-}
-
-#liontextslider .owl-item {
-  visibility: hidden;
-}
-
-#liontextslider .owl-item.active {
-  visibility: visible;
-}
-
-#video-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url(../images/bg/video-bg.jpg);
-  background-size: cover;
-  overflow: hidden;
-}
-
-.player {
-  display: none;
 }
 
 /*-------------------------------------------------------------------
@@ -2544,14 +2453,6 @@ h4.package {
 }
 
 @media (max-width:800px) {
-  #lionhero {
-    height: 100vh;
-    position: fixed;
-  }
-
-  #lionhero .owl-nav {
-    display: none;
-  }
 
   .menu2 .social {
     bottom: 0;
