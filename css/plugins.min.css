@@ -9362,7 +9362,6 @@ a.text-dark:hover {
 .ion-ios-pulse:before {
   display: inline-block; 
   font-family: "Ionicons"; 
-  speak: none; 
   font-style: normal; 
   font-weight: normal; 
   font-variant: normal; 
@@ -9401,6 +9400,13 @@ a.text-dark:hover {
   content: "\f404";
   vertical-align: middle;
   font-size: 20px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 400px) {
+  .ion-ios-close-empty:before {
+    margin-bottom: 18px;
+  }
 }
 
 .ion-ios-email-outline:before {
