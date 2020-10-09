@@ -9357,17 +9357,28 @@ a.text-dark:hover {
 .ion-chatbubbles:before,
 .ion-happy-outline:before,
 .ion-ios-close-empty:before,
-.ion-ios-email-outline:before {
-  display: inline-block;
-  font-family: "Ionicons";
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  text-rendering: auto;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale
+.ion-ios-email-outline:before,
+.ion-ios-loop:before,
+.ion-ios-pulse:before {
+  display: inline-block; 
+  font-family: "Ionicons"; 
+  speak: none; 
+  font-style: normal; 
+  font-weight: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+  text-rendering: auto; 
+  line-height: 1; 
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ion-ios-loop:before { 
+  content: "\f45a"; 
+}
+
+.ion-ios-pulse:before { 
+  content: "\f493"; 
 }
 
 .ion-ios-bolt-outline:before {
