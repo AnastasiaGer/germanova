@@ -251,7 +251,7 @@ img {
 
 svg:not(:root) {
   overflow: hidden;
-  vertical-align: sub;
+  vertical-align: middle;
 }
 
 [role=button],
@@ -9352,7 +9352,12 @@ a.text-dark:hover {
   font-style: normal;
 }
 
-.ion-ios-bolt-outline:before {
+.ion-ios-bolt-outline:before,
+.ion-laptop:before,
+.ion-chatbubbles:before,
+.ion-happy-outline:before,
+.ion-ios-close-empty:before,
+.ion-ios-email-outline:before {
   display: inline-block;
   font-family: "Ionicons";
   font-style: normal;
@@ -9368,6 +9373,29 @@ a.text-dark:hover {
 .ion-ios-bolt-outline:before {
   content: "\f3e5"
 }
+
+.ion-laptop:before {
+  content: "\f1fc"
+}
+
+.ion-chatbubbles:before { 
+  content: "\f11f"; 
+}
+
+.ion-happy-outline:before {
+  content: "\f3c6"
+}
+
+.ion-ios-close-empty:before {
+  content: "\f404";
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+.ion-ios-email-outline:before {
+  content: "\f422"
+}
+
 
 .leaflet-image-layer,
 .leaflet-layer,

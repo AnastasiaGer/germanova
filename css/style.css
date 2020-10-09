@@ -179,9 +179,10 @@ a:not([href]):not([tabindex]) {
   letter-spacing: 2px;
 }
 
-.btn-download svg {
+.btn-download:before {
   position: absolute;
-  vertical-align: -0.125em;
+  content: '\f407';
+  font-family: 'Ionicons';
   top: 12px;
   right: 16px;
   font-size: 24px;
@@ -939,7 +940,6 @@ h2.menu-item:after {
 .dark .social a {
   border: 2px solid #333;
   color: #333;
-  padding-top: 5px;
 }
 
 /*-------------------------------------------------------------------
