@@ -14,7 +14,7 @@
     7. Portfolio Block
     8. About Block
     9. Contact Block
-   10. Responsive
+    10. Responsive
 
 -------------------------------------------------------------------*/
 
@@ -34,6 +34,7 @@ body {
   font-weight: 300;
   line-height: 2.2;
   overflow-x: hidden;
+  margin: 0;
 }
 
 a {
@@ -59,18 +60,6 @@ img {
 
 
 /* texts */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #333;
-  letter-spacing: 1px;
-}
 
 h1 {
   font-size: 50px;
@@ -1319,6 +1308,7 @@ h4.package {
 
 .btn-email {
   position: relative;
+  text-align: center;
 }
 
 .btn-email:before {

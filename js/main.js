@@ -1,4 +1,5 @@
-(function ($) {
+$(function () {
+
     "use strict";
 
     $(window).on('load', function () {
@@ -10,7 +11,7 @@
     $('.portfolio-block, .menu-item').on('click', function () {
 
         //Portfolio masonry
-        var $container = $('#portfolio-container');
+        var $container = $('.portfolio-container');
         $container.isotope({
             masonry: {
                 columnWidth: '.portfolio-item'
@@ -93,7 +94,7 @@
         $('.inline-menu-container').addClass('showx');
         $('.content-blocks.pop section').empty();
     });
-//On Click Close Project
+    //On Click Close Project
     $('#close-project').on('click', function () {
         $('.content-blocks.pop').removeClass('showx');
         $('.sidebar-menu').removeClass('hidex');
@@ -114,56 +115,4 @@
         $(this).addClass('active');
         $('.inline-menu-container.style2').removeClass('dark');
     });
-
-    //Custom Cursor
-    if (('.cursor').length > 0) {
-        var $circleCursor = $('.cursor');
-
-        function moveCursor(e) {
-            var t = e.clientX + "px",
-                n = e.clientY + "px";
-            TweenMax.to($circleCursor, .2, {
-                left: t,
-                top: n,
-                ease: 'Power1.easeOut'
-            });
-        }
-        $(window).on('mousemove', moveCursor);
-
-        function zoomCursor() {
-            TweenMax.to($circleCursor, .2, {
-                borderWidth: '1px',
-                opacity: 0.1,
-                scale: 2,
-                ease: 'Power1.easeOut'
-            });
-        }
-
-        $(document).on('mouseenter', 'a, .zoom-cursor, .menu-item', zoomCursor);
-
-        function noCursor() {
-            TweenMax.to($circleCursor, .2, {
-                opacity: 0,
-                ease: 'Power1.easeOut'
-            });
-        }
-        $(document).on('mouseenter', 'button, .btn', noCursor);
-
-        function defaultCursor() {
-            TweenLite.to($circleCursor, .1, {
-                borderWidth: '2px',
-                opacity: 0.5,
-                scale: 1,
-                ease: 'Power1.easeOut'
-            });
-        }
-
-        $(document).on('mouseleave', 'a, .zoom-cursor, .menu-item, button, .btn', defaultCursor);
-
-        $(document).ready(function () {
-
-            $('.cursor').css('transform', 'scale(1)');
-        });
-    }
-
-})(jQuery);
+});
