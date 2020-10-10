@@ -615,8 +615,18 @@ h2.menu-item:after {
 }
 
 #close svg {
-  font-size: 30px;
-  vertical-align: sub;
+
+  vertical-align: middle;
+}
+
+#close-pop svg {
+  vertical-align: middle;
+}
+
+@media (max-width: 400px) {
+  #close svg {
+    vertical-align: super;
+  }
 }
 
 .inline-menu {

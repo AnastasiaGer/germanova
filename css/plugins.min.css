@@ -9398,16 +9398,16 @@ a.text-dark:hover {
 
 .ion-ios-close-empty:before {
   content: "\f404";
-  vertical-align: middle;
-  font-size: 20px;
-  margin-bottom: 18px;
+  /* vertical-align: middle;
+  font-size: 28px;
+  margin-bottom: 20px; */
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .ion-ios-close-empty:before {
     margin-bottom: 18px;
   }
-}
+} */
 
 .ion-ios-email-outline:before {
   content: "\f422"
