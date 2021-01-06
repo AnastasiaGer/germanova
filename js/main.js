@@ -39,8 +39,6 @@ $(function () {
         return false;
     });
 
-    //Blog post Modal
-
     //On Click Open Menu Items
     $('.menu-block, .menu-item').on('click', function () {
         $('.name-block').addClass('reverse');
