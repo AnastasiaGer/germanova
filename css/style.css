@@ -1095,9 +1095,9 @@ h2.menu-item:after {
   content: "";
   left: 18px;
   position: absolute;
-  top: 50px;
+  top: 60px;
   width: 1px;
-  height: 75%;
+  height: 80%;
 }
 
 .timeline:after {
